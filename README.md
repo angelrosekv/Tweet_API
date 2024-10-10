@@ -33,6 +33,16 @@ Make sure to store these credentials securely as you will need them in your prog
 - Set the **Callback URL** to `http://localhost:3000` (or any local testing environment).
 - Enable **User Authentication Settings** under the App settings to allow you to interact with your Twitter account.
 
+### 4. Install Go and Required Libraries
+1. In your project directory, initialize a Go module:
+  
+   go mod init tweet
+
+Install all the necessary pakckages
+- go get github.com/dghubble/go-twitter/twitter
+- go get github.com/dghubble/oauth1
+
+
 ## Program Details
 
 ### Posting a New Tweet
