@@ -8,7 +8,6 @@ By completing this assignment,
 - Learn how to authenticate with the Twitter API using OAuth.
 - Gain experience making POST requests to create a new tweet.
 - Understand how to make DELETE requests to remove an existing tweet.
-- Practice writing well-documented code.
   
 ## Setup Instructions
 
