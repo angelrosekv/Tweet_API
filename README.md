@@ -2,9 +2,9 @@
 # Twitter API Interaction Assignment
 
 ## Introduction
-This assignment demonstrates how to interact with the Twitter API by creating and deleting tweets using a go program. The goal of this project is to help students understand how to work with external APIs, use OAuth authentication, and manage API responses. Students will perform tasks such as posting a tweet and deleting a tweet programmatically while handling errors and rate limiting.
+This assignment demonstrates how to interact with the Twitter API by creating and deleting tweets using a go program. From this project is to help to understand how to work with external APIs, use OAuth authentication, and manage API responses. perform tasks such as posting a tweet and deleting a tweet programmatically while handling errors and rate limiting.
 
-By completing this assignment, students will:
+By completing this assignment,
 - Learn how to authenticate with the Twitter API using OAuth.
 - Gain experience making POST requests to create a new tweet.
 - Understand how to make DELETE requests to remove an existing tweet.
@@ -13,28 +13,29 @@ By completing this assignment, students will:
 ## Setup Instructions
 
 ### 1. Set Up a Twitter Developer Account
-Before you can interact with the Twitter API, you need to create a developer account and generate API keys:
+Before interact with the Twitter API,  need to create a developer account and generate API keys:
 - Create a [Twitter Developer Account](https://developer.twitter.com/).
 - Once your account is approved, create a new project and an app under your Twitter Developer Dashboard.
+  Here I used the default project
   
 ### 2. Generate API Keys
-Follow these steps to generate the necessary API keys:
+Follow below steps to generate the necessary API keys:
 1. Navigate to **Projects & Apps** → **Your App** → **Keys and Tokens**.
 2. Generate the following credentials:
-   - **API Key** (Consumer Key)
-   - **API Secret Key** (Consumer Secret)
+   - **API Key** 
+   - **API Secret Key** 
    - **Bearer Token**
    - **Access Token**
    - **Access Token Secret**
 
-Make sure to store these credentials securely as you will need them in your program.
+we have to save the credential in the notebook
 
 ### 3. Configure OAuth
 - Set the **Callback URL** to `http://localhost:3000` (or any local testing environment).
-- Enable **User Authentication Settings** under the App settings to allow you to interact with your Twitter account.
+- Enable **User Authentication Settings** under the App settings to allow you to interact with  Twitter account.
 
 ### 4. Install Go and Required Libraries
-1. In your project directory, initialize a Go module:
+1. In the project directory, initialize a Go module:
   
    go mod init tweet
 
