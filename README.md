@@ -1,4 +1,3 @@
-# Twitter API
 
 # Twitter API Interaction Assignment
 
@@ -37,15 +36,34 @@ Make sure to store these credentials securely as you will need them in your prog
 ## Program Details
 
 ### Posting a New Tweet
-The program uses Tweepy, a Python library for accessing the Twitter API, to post a tweet. The function `post_tweet` handles this functionality by sending a POST request to the **statuses/update** endpoint.
+The program uses Tweepy, a go library for accessing the Twitter API, to post a tweet. The function `post_tweet` handles this functionality by sending a POST request to the **statuses/update** endpoint.
 
 ### To run the program 
-To run program Add  Twitter API credentials (API Key, API Secret Key, Access Token, and Access Token Secret) to the Python script and run python script.
+To run program Add  Twitter API credentials (API Key, API Secret Key, Access Token, and Access Token Secret) to the go script and run go script.
 
-python post.go
+go run post2.go
+
+![image](https://github.com/user-attachments/assets/6aabd455-4e63-4eb5-a778-a5d9194075f9)
+
+We can see the post on the twitter as below
+
+![image](https://github.com/user-attachments/assets/d5466614-29b3-44e6-915f-9b6f1174ee70)
+
 
 ### Deleting an existing Account 
 To delete an existing tweet, the program uses the POST statuses/destroy/:id endpoint. For deleting required to give the tweet ID .
+
+To delete the existing tweet post we need to give the tweet ID and i run below command
+
+go run delete.go
+
+![image](https://github.com/user-attachments/assets/63b3e668-2d87-4880-9a17-44c54fbe560f)
+
+In the twitter account you can see the post is deleted as shown in the below
+
+![image](https://github.com/user-attachments/assets/ec7475bc-6b70-43f8-a065-eec243d55765)
+
+
 ### API Response 
 Posting a Tweet: A JSON response with details of the newly created tweet  
 Deleting a Tweet: A JSON response confirming the deletion of the tweet.
@@ -56,3 +74,6 @@ The program includes error handling to manage various issues that may arise when
 - Invalid credentials: The program checks if your API keys and tokens are correct.
 - Rate limiting: Twitter has rate limits for API requests. If you exceed these limits, the program will catch the error and handle it gracefully.
 - Invalid tweet ID: When deleting a tweet, the program ensures that a valid tweet ID is provided. If an invalid ID is used, the program catches the error and prints an appropriate message.
+
+![image](https://github.com/user-attachments/assets/835c528d-f11f-4c80-8136-de5f958a66d6)
+
